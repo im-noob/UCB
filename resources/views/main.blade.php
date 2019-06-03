@@ -98,25 +98,79 @@
 
           <div class="col-lg-4 box">
             <i class="ion-ios-bookmarks-outline"></i>
-            <h4 class="title"><a href="">Lorem Ipsum Delino</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h4 class="title"><a class="linkNotClickable">Simplicity</a></h4>
+            <p class="description">An organisation structure should be basically simple. It implies that the structure should have the simplest possible framework which will fulfil the purposes intended with due emphasis on economical and effective means of accomplishing the objective of the enterprise.</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
             <i class="ion-ios-stopwatch-outline"></i>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h4 class="title"><a class="linkNotClickable">Flexibility and Continuity</a></h4>
+            <p class="description">The organizer should build the structure not for today or tomorrow, but for the distant future. As such, continuity must be maintained in the organisa­tion structure over the period of time. However, since organisation structure is based on cir­cumstances and these are not fixed but change over the period of time, there is a need for incorporating the changes in the organisation structure also.</p>
           </div>
 
           <div class="col-lg-4 box">
             <i class="ion-ios-heart-outline"></i>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h4 class="title"><a class="linkNotClickable">Proper Delegation of Authority</a></h4>
+            <p class="description">The concept of ultimate authority will be effective only when there is proper delegation of authority at various levels of the organisation. Delega­tion of authority refers to authorisation of a manager to make certain decisions. A common problem in the organisational life is that the managers often fail to delegate adequate authority and suffer from various problems.</p>
           </div>
 
         </div>
       </div>
     </section><!-- #featured-services -->
+
+    
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>Services we provide</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a class="linkNotClickable">BCA</a></h4>
+            <p class="description"> BCA is a three year undergraduate degree course generally for students who wish to delve into the world of Computer languages. The course is one of the most popular options to get started with a career in Information Technology.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a class="linkNotClickable">PGDIB (1 Year)</a></h4>
+            <p class="description">PG Diploma in International Business [PGDIB]is a 1-year diploma level international business course. The candidates who are willing to take up this course must have the minimum eligibility criteria as they must possess their bachelor’s degree from a recognized university. Admission process of this course is carried out based on the candidate’s performance in their bachelor's degree. </p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a class="linkNotClickable">PDDIB (1.5 Year)</a></h4>
+            <p class="description">PGDIB is a programme specially designed to build a strong foundation in international business management and to provide options for specialization in focused functional areas. This programme has been customized for the young managers with only a few years of work experience.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a class="linkNotClickable">PGDCA</a></h4>
+            <p class="description">Post Graduate Diploma in Computer Applications (PGDCA) is designed for graduate students who are interested in computer applications. This program allows students to seek professional knowledge in computer applications.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a class="linkNotClickable">Research Methology</a></h4>
+            <p class="description"> A research method is a systematic plan for conducting research. Sociologists draw on a variety of both qualitative and quantitative research methods, including experiments, survey research, participant observation, and secondary data.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a class="linkNotClickable">Certificate Course in Bio Information</a></h4>
+            <p class="description"><strong>Certificate Course in Bioinformatics</strong>&nbsp;is certified Bioinformatic course. Bioinformatics is a discipline of computer science and information technology to the field of biology and medicine. During the various aspects of Bioinformatics are to be taken such as its fundamentals, analysis methods, programming and genomics.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+
+
+
 
     <!--==========================
       About Us Section
@@ -126,7 +180,7 @@
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lets Introduce about us what we do.. what we serve...</p>
         </header>
 
         <div class="row about-cols">
@@ -137,9 +191,9 @@
                 <img src="img/about-mission.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <h2 class="title"><a class="linkNotClickable">Our Mission</a></h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                University Centre of Bioinformatics, T.M. Bhagalpur University, Bhagalpur was established in 2005 with motto to provide learning opportunity in the field of Bioinformatics and funded by Department of Biotechnology, Ministry of Science & Technology, Govt. of India under BTISNet (Biotechnology Information System Network) Program. It is a matter of great pride for our University that this is the only Sub-DIC Bioinformatics Centre in the State of Bihar.
               </p>
             </div>
           </div>
@@ -150,9 +204,9 @@
                 <img src="img/about-plan.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <h2 class="title"><a class="linkNotClickable">Our Plan</a></h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                The Centre is an established unit of T.M. Bhagalpur University and it has been engaging regular classes on Computer application & Bioinformatics for Post & Under graduate students of Science faculty and also providing information to the teachers & research scholars for Ph.D. works since its inception. As such it has been acting as an integrated information hub on all aspects of biological researches and Data Mining of Biological resource. 
               </p>
             </div>
           </div>
@@ -163,9 +217,9 @@
                 <img src="img/about-vision.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <h2 class="title"><a class="linkNotClickable">Our Vision</a></h2>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                  Centre has two air conditioned class room with Multimedia Projector and Computer Lab with 30 nodes in network. The Centre has also high speed broad band connection to all nodes in the dry lab. Library is reach with relevant books. Students are encouraged to take live project training program in different companies.
               </p>
             </div>
           </div>
@@ -175,63 +229,16 @@
       </div>
     </section><!-- #about -->
 
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-      <div class="container">
 
-        <header class="section-header wow fadeInUp">
-          <h3>Services</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #services -->
-
+    
     <!--==========================
       Call To Action Section
     ============================-->
     <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
         <h3>Call To Action</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Call To Action</a>
+        <p> If there is any query you have for us just make a call in our office time we will feel better to server you best.</p>
+        <a class="cta-btn" href="tel:0641-2501382">Call To Action</a>
       </div>
     </section><!-- #call-to-action -->
 
@@ -243,32 +250,32 @@
 
         <header class="section-header">
           <h3>Our Skills</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+          <p>Organizational skills are some of the most important and transferable job skills an employee can acquire. They encompass a set of capabilities that help a person to plan, prioritize, and achieve his or her goals.</p>
         </header>
 
         <div class="skills-content">
 
           <div class="progress">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">HTML <i class="val">100%</i></span>
+              <span class="skill">Teamwork <i class="val">100%</i></span>
             </div>
           </div>
 
           <div class="progress">
             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">CSS <i class="val">90%</i></span>
+              <span class="skill">Executing <i class="val">90%</i></span>
             </div>
           </div>
 
           <div class="progress">
             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <span class="skill">Organising <i class="val">75%</i></span>
             </div>
           </div>
 
           <div class="progress">
             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <span class="skill">Planning <i class="val">55%</i></span>
             </div>
           </div>
 
@@ -285,24 +292,24 @@
 
         <header class="section-header">
           <h3>Facts</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p>Facts about us.. That you should know...</p>
         </header>
 
         <div class="row counters">
 
   				<div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">274</span>
-            <p>Clients</p>
+            <p>Student</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">421</span>
-            <p>Projects</p>
+            <span data-toggle="counter-up">12</span>
+            <p>Employee</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,364</span>
-            <p>Hours Of Support</p>
+            <span data-toggle="counte r-up">1,364</span>
+            <p>Books</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
@@ -312,9 +319,9 @@
 
   			</div>
 
-        <div class="facts-img">
+        {{-- <div class="facts-img">
           <img src="img/facts-img.png" alt="" class="img-fluid">
-        </div>
+        </div> --}}
 
       </div>
     </section><!-- #facts -->
@@ -347,11 +354,11 @@
               <figure>
                 <img src="img/portfolio/app1.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app1.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app1.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -362,11 +369,11 @@
               <figure>
                 <img src="img/portfolio/app2.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app2.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app2.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -377,11 +384,11 @@
               <figure>
                 <img src="img/portfolio/app3.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app3.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app3.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -392,11 +399,11 @@
               <figure>
                 <img src="img/portfolio/app4.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app4.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app4.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -407,11 +414,11 @@
               <figure>
                 <img src="img/portfolio/app5.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app5.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app5.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -422,11 +429,11 @@
               <figure>
                 <img src="img/portfolio/app6.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app6.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app6.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -437,11 +444,11 @@
               <figure>
                 <img src="img/portfolio/app7.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app7.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app7.jpeg"   class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -452,11 +459,11 @@
               <figure>
                 <img src="img/portfolio/app8.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app8.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app8.jpeg"   class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -467,11 +474,11 @@
               <figure>
                 <img src="img/portfolio/app9.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app9.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app9.jpeg"   class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -482,11 +489,11 @@
               <figure>
                 <img src="img/portfolio/app10.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app10.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app10.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -497,11 +504,11 @@
               <figure>
                 <img src="img/portfolio/app11.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app11.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app11.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -512,11 +519,11 @@
               <figure>
                 <img src="img/portfolio/app12.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app12.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app12.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -527,11 +534,11 @@
               <figure>
                 <img src="img/portfolio/app13.jpeg" class="img-fluid" alt="">
                 <a href="img/portfolio/app13.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/app13.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
+                <h4><a class="linkNotClickable">App 1</a></h4>
                 <p>App</p>
               </div>
             </div>
@@ -545,7 +552,7 @@
 
     <!--==========================
       Clients Section
-    ============================-->
+    ============================
     <section id="clients" class="wow fadeInUp">
       <div class="container">
 
@@ -565,7 +572,7 @@
         </div>
 
       </div>
-    </section><!-- #clients -->
+    </section>--><!-- #clients -->
 
     <!--==========================
       Clients Section
@@ -659,10 +666,10 @@
                   <h4>Walter White</h4>
                   <span>Chief Executive Officer</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-twitter"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-facebook"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-google-plus"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -677,10 +684,10 @@
                   <h4>Sarah Jhonson</h4>
                   <span>Product Manager</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-twitter"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-facebook"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-google-plus"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -695,10 +702,10 @@
                   <h4>William Anderson</h4>
                   <span>CTO</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-twitter"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-facebook"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-google-plus"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -713,10 +720,10 @@
                   <h4>Amanda Jepson</h4>
                   <span>Accountant</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-twitter"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-facebook"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-google-plus"></i></a>
+                    <a class="linkNotClickable"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>

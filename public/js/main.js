@@ -203,5 +203,10 @@
     items: 1
   });
 
+
+  $(".linkNotClickable").click(function(){
+    return false;
+  })
+
 })(jQuery);
 

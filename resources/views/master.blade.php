@@ -25,14 +25,9 @@
   <link href="{{url('/')}}/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="{{url('/')}}/css/style.css" rel="stylesheet">
+  <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: UCB
-    Theme URL: https://Biharilegends.com/UCB-bootstrap-business-template/
-    Author: Biharilegends.com
-    License: https://Biharilegends.com/license/
-  ======================================================= -->
+  
 </head>
 
 <body>
@@ -52,17 +47,19 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">Academic</a></li>
-          <li><a href="#services">Notice</a></li>
-          <li><a href="#portfolio">Seminars</a></li>
-          <li><a href="#team">About Us</a></li>
-          <li class="menu-has-children"><a href="">More</a>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="{{url('/')}}/notice">Notice</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#portfolio">Galery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#team">Team</a></li>
+          {{-- <li class="menu-has-children"><a href="">More</a>
             <ul>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Publication</a></li>
-              <!-- <li><a href="#">Database</a></li> -->
+              <li><a class="linkNotClickable">Research</a></li>
+              <li><a class="linkNotClickable">Publication</a></li>
+              <!-- <li><a class="linkNotClickable">Database</a></li> -->
             </ul>
-          </li>
+          </li> --}}
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -122,7 +119,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+91 94707 82443</a></p>
+              <p><a href="tel:0641-2501382">0641-2501382</a></p>
             </div>
           </div>
 
@@ -130,7 +127,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:support@ucb.com">support@ucb.com</a></p>
+              <p><a href="mailto:info@bioinfotmbu.org">info@bioinfotmbu.org</a></p>
             </div>
           </div>
 
@@ -183,11 +180,11 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="{{url('/')}}" class="class="back-to-top"">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="{{url('/')}}/#about"/>About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="{{url('/')}}/#services"/>Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="{{url('/')}}/#portfolio"/>Galery</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="{{url('/')}}/notice"/>Notice</a></li>
             </ul>
           </div>
 
@@ -198,16 +195,16 @@
               Beside Botanical Garden<br>
               In front of P.G Department of Physics <br>
               T.N.B College<br>
-              <strong>Phone:</strong> +91 94707 82443<br>
-              <strong>Email:</strong> support@ucb.com<br>
+              <strong>Phone:</strong> 0641-2501382<br>
+              <strong>Email:</strong> info@bioinfotmbu.org<br>
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a class="linkNotClickable" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a class="linkNotClickable" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a class="linkNotClickable" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a class="linkNotClickable" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a class="linkNotClickable" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
           </div>
@@ -232,15 +229,15 @@
         <!--
           All the links in the footer should remain intact.
           You can delete the links only if you purchased the pro version.
-          Licensing information: https://Biharilegends.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://Biharilegends.com/buy/?theme=UCB
+          Licensing information: https://gangaservices.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://gangaservices.com/buy/?theme=UCB
         -->
-        Designed by <a href="https://Biharilegends.com/">Biharilegends Private Limited Solution</a>
+        Designed by <a href="https://gangaservices.com/" target="_blank">GangaServices Software Solution</a>
       </div>
     </div>
   </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
@@ -259,10 +256,10 @@
   <script src="{{url('/')}}/lib/lightbox/js/lightbox.min.js"></script>
   <script src="{{url('/')}}/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="{{url('/')}}/js/contactform.js"></script>
+  <script src="{{asset('js/contactform.js')}}"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="{{url('/')}}/js/main.js"></script>
+  <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 </html>
