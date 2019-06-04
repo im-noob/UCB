@@ -17,10 +17,13 @@ Route::get('/', function () {
 Route::get('/notice',function(){
     return view('notice');
 });
-
+ 
+    
 Route::get('/welcome',function(){
     return view('welcome');
 });
+
+
 
 Auth::routes();
 

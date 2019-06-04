@@ -46,13 +46,13 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="{{url('/')}}/#services">SERVICES</a></li>
+          <li class="menu-active"><a href="{{url('/')}}">Home</a></li>
+          <li><a href="{{url('/')}}/#services">Services</a></li>
           <li><a href="{{url('/')}}/notice">Notice</a></li>
           <li><a href="{{url('/')}}/#about">About Us</a></li>
           <li><a href="{{url('/')}}/#portfolio">Galery</a></li>
           <li><a href="{{url('/')}}/#testimonials">Testimonials</a></li>
-          <li><a href="{{url('/')}}/#team">Team</a></li>
+          <li><a href="{{url('/')}}/#team">Faculty</a></li>
           {{-- <li class="menu-has-children"><a href="">More</a>
             <ul>
               <li><a class="linkNotClickable">Research</a></li>
