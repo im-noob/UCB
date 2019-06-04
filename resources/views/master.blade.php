@@ -77,6 +77,7 @@
 
   {{-- SECTION:START --}}
   @yield('main')
+  @yield('notice')
   {{-- SECTION:STOP --}}
 
 
