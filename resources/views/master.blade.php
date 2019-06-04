@@ -39,7 +39,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">UCB</a></h1>
+        <h1><a href="{{url('/')}}" class="scrollto">UCB</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -47,12 +47,12 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#services">SERVICES</a></li>
+          <li><a href="{{url('/')}}/#services">SERVICES</a></li>
           <li><a href="{{url('/')}}/notice">Notice</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#portfolio">Galery</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="{{url('/')}}/#about">About Us</a></li>
+          <li><a href="{{url('/')}}/#portfolio">Galery</a></li>
+          <li><a href="{{url('/')}}/#testimonials">Testimonials</a></li>
+          <li><a href="{{url('/')}}/#team">Team</a></li>
           {{-- <li class="menu-has-children"><a href="">More</a>
             <ul>
               <li><a class="linkNotClickable">Research</a></li>

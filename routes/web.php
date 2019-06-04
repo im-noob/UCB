@@ -17,3 +17,15 @@ Route::get('/', function () {
 Route::get('/notice',function(){
     return view('notice');
 });
+
+Route::get('/welcome',function(){
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('register',function(){
+//     return view('main');
+// });
