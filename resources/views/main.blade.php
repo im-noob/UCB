@@ -11,65 +11,35 @@
 
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/intro-carousel/1.jpeg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>UNIVERSITY CENTER OF BIO-INFORMATICS</h2>
-                <h2><small>SUB DIV (BIO-INFORMATICS)</small></h2>
-                <p><BIG>TILKAMANJHI BHAGALPUR UNIVERSITY</BIG></p>
-                <a href="#contact" class="btn-get-started scrollto">Contact US Now</a>
-              </div>
-            </div>
-          </div>
+          @php $i = 0; @endphp
 
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/2.jpeg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>UNIVERSITY CENTER OF BIO-INFORMATICS</h2>
-                <h2><small>SUB DIV (BIO-INFORMATICS)</small></h2>
-                <p><BIG>TILKAMANJHI BHAGALPUR UNIVERSITY</BIG></p>
-                <a href="#contact" class="btn-get-started scrollto">Contact US Now</a>
+          @forelse ($slider_pics as $slider)
+          @php $i++ @endphp
+              <div class="carousel-item @if ($i == 1) active @endif ">
+                <div class="carousel-background"><img src="{{url('/')}}/{{$slider->pic}}" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>{{$slider->title}}</h2>
+                    <h2><small>{{$slider->subtitle}}</small></h2>
+                    <p><BIG>{{$slider->short_desc}}</BIG></p>
+                    <a href="#contact" class="btn-get-started scrollto">Contact US Now</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+          @empty
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="img/intro-carousel/2.jpeg" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>UNIVERSITY CENTER OF BIO-INFORMATICS</h2>
+                    <h2><small>SUB DIV (BIO-INFORMATICS)</small></h2>
+                    <p><BIG>TILKAMANJHI BHAGALPUR UNIVERSITY</BIG></p>
+                    <a href="#contact" class="btn-get-started scrollto">Contact US Now</a>
+                  </div>
+                </div>
+              </div>
+          @endforelse
 
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/3.jpeg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>UNIVERSITY CENTER OF BIO-INFORMATICS</h2>
-                <h2><small>SUB DIV (BIO-INFORMATICS)</small></h2>
-                <p><BIG>TILKAMANJHI BHAGALPUR UNIVERSITY</BIG></p>
-                <a href="#contact" class="btn-get-started scrollto">Contact US Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/4.jpeg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>UNIVERSITY CENTER OF BIO-INFORMATICS</h2>
-                <h2><small>SUB DIV (BIO-INFORMATICS)</small></h2>
-                <p><BIG>TILKAMANJHI BHAGALPUR UNIVERSITY</BIG></p>
-                <a href="#contact" class="btn-get-started scrollto">Contact US Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/5.jpeg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>UNIVERSITY CENTER OF BIO-INFORMATICS</h2>
-                <h2><small>SUB DIV (BIO-INFORMATICS)</small></h2>
-                <p><BIG>TILKAMANJHI BHAGALPUR UNIVERSITY</BIG></p>
-                <a href="#contact" class="btn-get-started scrollto">Contact US Now</a>
-              </div>
-            </div>
-          </div>
 
         </div>
 
@@ -349,200 +319,31 @@
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app1.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app1.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app1.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
 
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
+
+
+          @forelse ($galary_pics  as $pics)
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img src="{{url('/')}}/{{$pics->pic}}" class="img-fluid" alt="">
+                    <a href="{{url('/')}}/{{$pics->pic}}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="{{url('/')}}/{{$pics->pic}}" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  </figure>
+
+                  <div class="portfolio-info">
+                    <h4><a class="linkNotClickable">{{$pics->title}}</a></h4>
+                    <p>{{$pics->short_desc}}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app2.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app2.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app2.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
+          @empty
+              <div style="text-align: center">
+                No Image Found
               </div>
-            </div>
-          </div>
+          @endforelse
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app3.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app3.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app3.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
 
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app4.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app4.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app4.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app5.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app5.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app5.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app6.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app6.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app6.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app7.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app7.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app7.jpeg"   class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app8.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app8.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app8.jpeg"   class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app9.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app9.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app9.jpeg"   class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app10.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app10.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app10.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app11.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app11.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app11.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app12.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app12.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app12.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app13.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/app13.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="img/portfolio/app13.jpeg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="linkNotClickable">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
 
 
         </div>
@@ -586,60 +387,23 @@
 
         <div class="owl-carousel testimonials-carousel">
 
-          <div class="testimonial-item">
-            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
+          
+          @forelse ($testimonials as $item)
+              <div class="testimonial-item">
+                <img src="{{url('/')}}/{{$item->pic}}" class="testimonial-img" alt="">
+                <h3>{{$item->name}}</h3>
+                <h4>{{$item->degination}}</h4>
+                <p>
+                  <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  {{$item->message}}
+                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+              </div>
+          @empty
+              <div style="text-align: center">
+                No Record Found
+              </div>
+          @endforelse
 
         </div>
 
@@ -658,25 +422,28 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="member">
-              <img src="img/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                  <div class="social">
-                    <a class="linkNotClickable"><i class="fa fa-twitter"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-facebook"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-google-plus"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-linkedin"></i></a>
+          
+
+
+          @forelse ($team as $member)
+              <div class="col-lg-3 col-md-6 wow fadeInUp">
+                <div class="member">
+                  <img src="{{url('/')}}/{{$member->pic}}" class="img-fluid" alt="">
+                  <div class="member-info">
+                    <div class="member-info-content">
+                      <h4>{{$member->name}}</h4>
+                      <span>{{$member->degination}}</span>
+                      
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          @empty
+            <div style="text-align: center">
+              No Member Found
+            </div>
+          @endforelse
+          {{-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="member">
               <img src="img/team-2.jpg" class="img-fluid" alt="">
               <div class="member-info">
@@ -692,43 +459,8 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> --}}
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="member">
-              <img src="img/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                  <div class="social">
-                    <a class="linkNotClickable"><i class="fa fa-twitter"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-facebook"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-google-plus"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="img/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                  <div class="social">
-                    <a class="linkNotClickable"><i class="fa fa-twitter"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-facebook"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-google-plus"></i></a>
-                    <a class="linkNotClickable"><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
         </div>
 

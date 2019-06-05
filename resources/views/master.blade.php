@@ -60,7 +60,7 @@
               <!-- <li><a class="linkNotClickable">Database</a></li> -->
             </ul>
           </li> --}}
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" id="gotoSubmitForm">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -134,31 +134,56 @@
 
         </div>
 
+        
+            
+            
+        
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+            @if(Session::has('success'))
+                <div class="alert alert-success"> 
+                    <strong>{{ Session::get('success') }}</strong>
+                </div>
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <script>document.getElementById("gotoSubmitForm").click();</script>
+            @else
+            @foreach ($errors->all() as $message) 
+                <div class="alert alert-danger"> 
+                    <strong>{{$message}}</strong>
+                </div>
+                <div id="errormessage">{{$message}}</div>
+            @endforeach
+            
+              
+              
+            <form action="{{url('/')}}/submitContactUS" method="post" role="form" class="contactForm" id="ContactUSForm">
+                @csrf
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+            @endif
         </div>
+
+        
+
+
+
 
       </div>
     </section><!-- #contact -->

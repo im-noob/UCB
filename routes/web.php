@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
+Route::get('/', 'main_c@getMainPageData');
 Route::get('/notice',function(){
     return view('notice');
 });
@@ -32,3 +30,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('register',function(){
 //     return view('main');
 // });
+
+// Contact us form submition
+Route::post('submitContactUS', 'contact@submitContactForm');
