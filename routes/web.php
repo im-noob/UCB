@@ -11,25 +11,38 @@
 |
 */
 
+// Main Page Route
 Route::get('/', 'main_c@getMainPageData');
+
+// Notice Route
 Route::get('/notice',function(){
     return view('notice');
 });
  
     
+// Welcome Route Or Login For Admin
 Route::get('/welcome',function(){
     return view('welcome');
 });
 
 
-
+// all System Routes for auth
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-// Route::get('register',function(){
-//     return view('main');
-// });
+// Overriding register route
+Route::get('register',function(){
+    return view('main');
+});
 
 // Contact us form submition
 Route::post('submitContactUS', 'contact@submitContactForm');
+
+
+
+
+
+
+
+
+
+Route::get('/home', 'HomeController@index')->name('home');
