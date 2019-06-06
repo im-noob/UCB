@@ -44,8 +44,8 @@
             {{-- Place Holder:END --}}
 
             
-            
-            <div class="card" style="border:none">
+            {{-- Post Format --}}
+            {{-- <div class="card  mb-4" style="border:none">
                 <div class="card-body" style="border: thin solid #dadce0;border-radius: .5rem;    padding: 2rem;">
                     <div class="row card-title">
                         <h1 style=" font-weight: 600;font-size: 2rem; line-height: 2.5rem; margin: 0 0 .5rem;">
@@ -59,7 +59,7 @@
                 <div class="card-footer text-muted">
                     Published on : 23 june 2018
                 </div>
-            </div>
+            </div> --}}
 
 
 
@@ -74,12 +74,15 @@
     <script>
         
         $(function(){
+
+            // load post on start 
+            loadPost(0,false);
+
             //removign tranparency on start
             $("#header").addClass('header-scrolled');
             //revmoing tranparency on scroll
             $(window).scroll(function(){
                 $("#header").addClass('header-scrolled');
-            
             })
 
             // Taking out from overlapping
@@ -88,10 +91,13 @@
 
             //on Selected Something
             $("#select-notice-type").on('change',function(){
-            
                 // Placeholder effet
                 let selectedValue = this.value; 
-                console.log(selectedValue);
+                loadPost(selectedValue,1);
+
+            });
+            function loadPost(selectedValue,filter){
+                
                 //Making empty the list
                 $("#notice-container").empty();
 
@@ -119,9 +125,88 @@
                 '');
 
 
+                // Making ajax request to fetech list 
+                
+                $.ajax({
+                        cache: false,
+                        type: "POST",
+                        data: {
+        
+                            _token:  "{{ csrf_token() }}",
+                            categoryID : selectedValue,
+                            filter: filter,
+                        },
+                        url: "{{url('/')}}/getPost", 
+                        success: function(response){
+                            console.log(response)
+                            if (response.received) {
+                                //Making empty the list
+                                $("#notice-container").empty();
 
-            });
+                                if (response.data.length != 0 ) {
+                                    $data = response.data;
+                                    //making list and appendng  in listbox 
+                                    for(var i = 0 ; i < $data.length ; i ++){
+                                        $("#notice-container").append(''+
+                                        
+
+                                            '<div class="card mb-4" style="border:none">'+
+                                            '    <div class="card-body" style="border: thin solid #dadce0;border-radius: .5rem;    padding: 2rem;">'+
+                                            '        <div class="row card-title">'+
+                                            '            <h1 style=" font-weight: 600;font-size: 2rem; line-height: 2.5rem; margin: 0 0 .5rem;">'+
+                                                            $data[i].title+
+                                            '            </h1>'+
+                                            '        </div>'+
+                                            '        <div class="row card-text" style="color: #3c4043; font-family: Roboto, \'Helvetica Neue\', Helvetica, sans-serif; line-height: 1.25rem;">'+
+                                            '            '+$data[i].post+
+                                            '        </div>'+
+                                            '    </div>'+                
+                                            '    <div class="card-footer text-muted">'+
+                                            '        Published on : '+$data[i].post_date+
+                                            '    </div>'+
+                                            '</div>'+
+
+
+                                        '');
+                                    }
+            
+                                }else{
+                                    //making list as noe list found 
+                                    $("#notice-container").append(''+
+        
+                                        '    <div class="col-sm-12">'+
+                                        '        <div style="text-align: center">No More post found for this category .</div>'+
+                                        '    </div>'+
+
+                                    '');
+        
+                                }
+
+                                
+
+                                
+
+
+                            }else{
+                                alert("Oops!!! Somthing is not right");
+                            }
+                        },
+                        error: function(xhr,status,error){
+                            console.log(xhr.responseJSON);
+                            console.log(status);
+                            console.log(error);
+                        }
+                });
+
+
+            }
             
         })
     </script>
 @endsection
+
+
+
+
+
+

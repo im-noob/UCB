@@ -18,8 +18,10 @@ Route::get('/', 'main_c@getMainPageData');
 Route::get('/notice',function(){
     return view('notice');
 });
- 
-    
+
+Route::post('/getPost', 'notice_c@getPostFromAjax');
+
+
 // Welcome Route Or Login For Admin
 Route::get('/welcome',function(){
     return view('welcome');
