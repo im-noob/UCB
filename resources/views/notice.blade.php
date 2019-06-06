@@ -4,7 +4,7 @@
     <section id="top-select">
         <div class="container mb-4">
             <select class="form-control" id="select-notice-type">
-                <option hidden>Select Notice Type</option>
+                <option value="all">All Post</option>
                 <option value="1">News & Events</option>
                 <option value="2">Appointments</option>
                 <option value="3">Exam Update</option>
@@ -52,7 +52,7 @@
                             This is Header
                         </h1>
                     </div>
-                    <div class="row card-text" style="color: #3c4043; font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif; line-height: 1.25rem;">
+                    <div class="row card-text" style="display: block; color: #3c4043; font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif; line-height: 1.25rem;">
                         Article Goes Here the great Article.
                     </div>
                 </div>                
@@ -76,7 +76,7 @@
         $(function(){
 
             // load post on start 
-            loadPost(0,false);
+            loadPost("all");
 
             //removign tranparency on start
             $("#header").addClass('header-scrolled');
@@ -93,10 +93,10 @@
             $("#select-notice-type").on('change',function(){
                 // Placeholder effet
                 let selectedValue = this.value; 
-                loadPost(selectedValue,1);
+                loadPost(selectedValue);                
 
             });
-            function loadPost(selectedValue,filter){
+            function loadPost(selectedValue){
                 
                 //Making empty the list
                 $("#notice-container").empty();
@@ -134,7 +134,6 @@
         
                             _token:  "{{ csrf_token() }}",
                             categoryID : selectedValue,
-                            filter: filter,
                         },
                         url: "{{url('/')}}/getPost", 
                         success: function(response){
@@ -157,7 +156,7 @@
                                                             $data[i].title+
                                             '            </h1>'+
                                             '        </div>'+
-                                            '        <div class="row card-text" style="color: #3c4043; font-family: Roboto, \'Helvetica Neue\', Helvetica, sans-serif; line-height: 1.25rem;">'+
+                                            '        <div class="row card-text rawHTML" style="display: block; color: #3c4043; font-family: Roboto, \'Helvetica Neue\', Helvetica, sans-serif; line-height: 1.25rem;">'+
                                             '            '+$data[i].post+
                                             '        </div>'+
                                             '    </div>'+                

@@ -10,9 +10,8 @@ class notice_c extends Controller
     public $successStatus = 200;
     function getPostFromAjax(Request $request){
         $categoryID = $request->categoryID;
-        $filter = $request->filter;
         
-        if ($filter == 1) {
+        if ($categoryID != "all") {
             $data = DB::table('notice_tab')
                     ->select('title','post',DB::raw('date_format(updated_at, "%l:%i %p %D %M %Y") as post_date'))
                     ->where('post_type',$categoryID)
@@ -31,7 +30,6 @@ class notice_c extends Controller
             'received'=>true,
             'data'=>$data,
             'categoryID'=>$categoryID,
-            'filter'=>$filter,
         ],$this->successStatus);
     }
 }

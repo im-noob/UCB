@@ -1736,3 +1736,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*********** PLACEHOLDER CSS:END ********/
 
+.rawHTML>img{
+  width: 100%!important;
+}
