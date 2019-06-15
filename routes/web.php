@@ -46,5 +46,12 @@ Route::post('submitContactUS', 'contact@submitContactForm');
 
 
 
-
+// Admin Panel
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Edit Admin
+Route::get('editGalary', 'HomeController@funeditGalary');
+Route::get('editSlider', 'HomeController@funeditSlider');
+Route::get('editTeamMembers', 'HomeController@funeditTeamMembers');
+Route::get('editTestimonials', 'HomeController@funeditTestimonials');
+Route::get('editNotice', 'HomeController@funeditNotice');

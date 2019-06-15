@@ -25,4 +25,26 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    // edit section 
+    public function funeditGalary(){
+        return view('admin.editGalary');
+    }
+
+    public function funeditSlider(){
+        return view('admin.editSlider');
+    }
+
+    public function funeditTeamMembers(){
+        return view('admin.editTeamMembers');
+    }
+
+    public function funeditTestimonials(){
+        return view('admin.editTestimonials');
+    }
+
+    public function funeditNotice(){
+        return view('admin.editNotice');
+    }
+
 }

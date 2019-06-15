@@ -74,6 +74,14 @@
 
         <main class="py-4">
             @yield('content')
+
+            {{-- Edit Admin:START --}}
+            @yield('editGalary')
+            @yield('editNotice')
+            @yield('editSlider')
+            @yield('editTeamMembers')
+            @yield('editTestimonials')
+            {{-- Edit Admin:END --}}
         </main>
     </div>
 </body>
