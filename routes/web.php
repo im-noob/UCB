@@ -45,13 +45,21 @@ Route::post('submitContactUS', 'contact@submitContactForm');
 
 
 
+Route::group(['middleware' => ['auth']], function () {
+  
+    // Admin Panel
+    Route::get('/home', 'HomeController@index')->name('home');
 
-// Admin Panel
-Route::get('/home', 'HomeController@index')->name('home');
+    //Edit Admin
+    Route::get('editGalary', 'HomeController@funeditGalary');
+    Route::get('editSlider', 'HomeController@funeditSlider');
+    Route::get('editTeamMembers', 'HomeController@funeditTeamMembers');
+    Route::get('editTestimonials', 'HomeController@funeditTestimonials');
+    Route::get('editNotice', 'HomeController@funeditNotice');
 
-//Edit Admin
-Route::get('editGalary', 'HomeController@funeditGalary');
-Route::get('editSlider', 'HomeController@funeditSlider');
-Route::get('editTeamMembers', 'HomeController@funeditTeamMembers');
-Route::get('editTestimonials', 'HomeController@funeditTestimonials');
-Route::get('editNotice', 'HomeController@funeditNotice');
+    // Edit post
+    Route::get('PostNotice',function(){
+        return view('admin.PostNotice');
+    });
+
+});
