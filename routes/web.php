@@ -61,5 +61,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('PostNotice',function(){
         return view('admin.PostNotice');
     });
+    Route::post('savePost',  'HomeController@savePost');
 
 });
