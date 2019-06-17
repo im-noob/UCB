@@ -428,7 +428,7 @@
           @forelse ($team as $member)
               <div class="col-lg-3 col-md-6 wow fadeInUp">
                 <div class="member">
-                  <img src="{{url('/')}}/{{$member->pic}}" class="img-fluid" alt="">
+                  <img src="{{url('/')}}/{{$member->pic}}" class="img-fluid" alt="" style="height: 250px">
                   <div class="member-info">
                     <div class="member-info-content">
                       <h4>{{$member->name}}</h4>
