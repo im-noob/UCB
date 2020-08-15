@@ -1,6 +1,11 @@
 @extends('master')
 @section('notice')
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .rawHTML>img{
+          width: 100%!important;
+        }
+    </style>
     <section id="top-select">
         <div class="container mb-4">
             <select class="form-control" id="select-notice-type">
